@@ -1,464 +1,329 @@
-<!DOCTYPE HTML>
 <html>
 
 <head>
+	<!-- Standard Meta -->
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Elliot Huck</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content="" />
-	<meta property="og:image" content="" />
-	<meta property="og:url" content="" />
-	<meta property="og:site_name" content="" />
-	<meta property="og:description" content="" />
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+	<!-- Site Properties -->
+	<title>Homepage - Semantic</title>
+	<link rel="stylesheet" type="text/css" href="./node_modules/semantic-ui/dist/components/reset.css">
+	<link rel="stylesheet" type="text/css" href="./node_modules/semantic-ui/dist/components/site.css">
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="./node_modules/semantic-ui/dist/components/container.css">
+	<link rel="stylesheet" type="text/css" href="./node_modules/semantic-ui/dist/components/grid.css">
+	<link rel="stylesheet" type="text/css" href="./node_modules/semantic-ui/dist/components/header.css">
+	<link rel="stylesheet" type="text/css" href="./node_modules/semantic-ui/dist/components/image.css">
+	<link rel="stylesheet" type="text/css" href="./node_modules/semantic-ui/dist/components/menu.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./node_modules/semantic-ui/dist/components/divider.css">
+	<link rel="stylesheet" type="text/css" href="./node_modules/semantic-ui/dist/components/dropdown.css">
+	<link rel="stylesheet" type="text/css" href="./node_modules/semantic-ui/dist/components/segment.css">
+	<link rel="stylesheet" type="text/css" href="./node_modules/semantic-ui/dist/components/button.css">
+	<link rel="stylesheet" type="text/css" href="./node_modules/semantic-ui/dist/components/list.css">
+	<link rel="stylesheet" type="text/css" href="./node_modules/semantic-ui/dist/components/icon.css">
+	<link rel="stylesheet" type="text/css" href="./node_modules/semantic-ui/dist/components/sidebar.css">
+	<link rel="stylesheet" type="text/css" href="./node_modules/semantic-ui/dist/components/transition.css">
 
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<style type="text/css">
+		.hidden.menu {
+			display: none;
+		}
 
-	<link rel="stylesheet" href="css/style.css">
+		.masthead.segment {
+			min-height: 700px;
+			padding: 1em 0em;
+		}
 
+		.masthead .logo.item img {
+			margin-right: 1em;
+		}
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+		.masthead .ui.menu .ui.button {
+			margin-left: 0.5em;
+		}
 
+		.masthead h1.ui.header {
+			margin-top: 3em;
+			margin-bottom: 0em;
+			font-size: 4em;
+			font-weight: normal;
+		}
+
+		.masthead h2 {
+			font-size: 1.7em;
+			font-weight: normal;
+		}
+
+		.ui.vertical.stripe {
+			padding: 8em 0em;
+		}
+
+		.ui.vertical.stripe h3 {
+			font-size: 2em;
+		}
+
+		.ui.vertical.stripe .button+h3,
+		.ui.vertical.stripe p+h3 {
+			margin-top: 3em;
+		}
+
+		.ui.vertical.stripe .floated.image {
+			clear: both;
+		}
+
+		.ui.vertical.stripe p {
+			font-size: 1.33em;
+		}
+
+		.ui.vertical.stripe .horizontal.divider {
+			margin: 3em 0em;
+		}
+
+		.quote.stripe.segment {
+			padding: 0em;
+		}
+
+		.quote.stripe.segment .grid .column {
+			padding-top: 5em;
+			padding-bottom: 5em;
+		}
+
+		.footer.segment {
+			padding: 5em 0em;
+		}
+
+		.secondary.pointing.menu .toc.item {
+			display: none;
+		}
+
+		@media only screen and (max-width: 700px) {
+			.ui.fixed.menu {
+				display: none !important;
+			}
+
+			.secondary.pointing.menu .item,
+			.secondary.pointing.menu .menu {
+				display: none;
+			}
+
+			.secondary.pointing.menu .toc.item {
+				display: block;
+			}
+
+			.masthead.segment {
+				min-height: 350px;
+			}
+
+			.masthead h1.ui.header {
+				font-size: 2em;
+				margin-top: 1.5em;
+			}
+
+			.masthead h2 {
+				margin-top: 0.5em;
+				font-size: 1.5em;
+			}
+		}
+	</style>
+
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+	<script src="assets/library/jquery.min.js"></script>
+	<script src="./node_modules/semantic-ui/dist/components/visibility.js"></script>
+	<script src="./node_modules/semantic-ui/dist/components/sidebar.js"></script>
+	<script src="./node_modules/semantic-ui/dist/components/transition.js"></script>
+	<script>
+		$(document)
+			.ready(function () {
+
+				// fix menu when passed
+				$('.masthead')
+					.visibility({
+						once: false,
+						onBottomPassed: function () {
+							$('.fixed.menu').transition('fade in');
+						},
+						onBottomPassedReverse: function () {
+							$('.fixed.menu').transition('fade out');
+						}
+					})
+					;
+
+				// create sidebar and attach to menu open
+				$('.ui.sidebar')
+					.sidebar('attach events', '.toc.item')
+					;
+
+			})
+			;
+	</script>
+	<link id="avast_os_ext_custom_font"
+		href="chrome-extension://eofcbnmajmjmplflapaojjnihcjkigck/common/ui/fonts/fonts.css" rel="stylesheet"
+		type="text/css">
 </head>
 
-<body>
+<body class="pushable">
 
-	<main id="colorlib-page">
+	<!-- Following Menu -->
+	<div class="ui large top fixed hidden menu">
+		<div class="ui container">
+			<a class="active item">Home</a>
+			<a class="item">Work</a>
+			<a class="item">Company</a>
+			<a class="item">Careers</a>
+			<div class="right menu">
+				<div class="item">
+					<a class="ui button">Log in</a>
+				</div>
+				<div class="item">
+					<a class="ui primary button">Sign Up</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
-		<header style="background-color: #000;">
-			<div class="container">
+	<!-- Sidebar Menu -->
+	<div class="ui vertical inverted sidebar menu left">
+		<a class="active item">Home</a>
+		<a class="item">Work</a>
+		<a class="item">Company</a>
+		<a class="item">Careers</a>
+		<a class="item">Login</a>
+		<a class="item">Signup</a>
+	</div>
+
+
+	<!-- Page Contents -->
+	<div class="pusher">
+		<div class="ui inverted vertical masthead center aligned segment">
+
+			<div class="ui container">
+				<div class="ui large secondary inverted pointing menu">
+					<a class="toc item">
+						<i class="sidebar icon"></i>
+					</a>
+					<a class="active item">Home</a>
+					<a class="item">Work</a>
+					<a class="item">Company</a>
+					<a class="item">Careers</a>
+					<div class="right item">
+						<a class="ui inverted button">Log in</a>
+						<a class="ui inverted button">Sign Up</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="ui text container">
+				<h1 class="ui inverted header">
+					Imagine-a-Company
+				</h1>
+				<h2>Do whatever you want when you want to.</h2>
+				<div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+			</div>
+
+		</div>
+
+		<div class="ui vertical stripe segment">
+			<div class="ui middle aligned stackable grid container">
 				<div class="row">
-					<div class="col-md-12">
-						<div class="colorlib-navbar-brand">
-							<p class="colorlib-logo" href="index.html" style="color: #000;">&nbsp;</p>
-						</div>
+					<div class="eight wide column">
+						<h3 class="ui header">We Help Companies and Companions</h3>
+						<p>We can give your company superpowers to do things that they never thought possible. Let us delight your
+							customers and empower your needs...through pure data analytics.</p>
+						<h3 class="ui header">We Make Bananas That Can Dance</h3>
+						<p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
+					</div>
+					<div class="six wide right floated column">
+						<img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
 					</div>
 				</div>
-			</div>
-		</header>
-
-		<header style="position: sticky; background-color: #000; z-index: 1;">
-			<div class="container">
 				<div class="row">
-
-					<div class="col-md-3 col-xs-6">
-						<div class="colorlib-navbar-brand logo">
-							<a href="index.html" style="color: #fff; font-size: 1.6em;">[ elliot huck ]</a>
-							<!-- class="colorlib-logo" -->
-						</div>
-					</div>
-
-					<a class="colorlib-nav-toggle" onClick="toggleNav()"><i></i></a>
-
-					<div class="col-md-9 col-sm-12 col-xs-7 col-md-offset-0 col-sm-offset-0 col-xs-offset-6 nav-links text-right" onClick="toggleNav()">
-						<a href="#about-header">About&nbsp;Me</a>
-						<a href="#technologies"">Technologies</a>
-								<a href=" #projects"">Projects</a>
-						<a href="#fun-facts">Fun&nbsp;Facts</a>
-						<a href="#contact">Contact</a>
-					</div>
-
-
-
-				</div>
-			</div>
-		</header>
-
-
-		<aside id="colorlib-hero">
-
-
-			<div class="flexslider">
-				<ul class="slides">
-					<li style="background-color: #000;">
-						<div class="overlay">
-
-						</div>
-						<div class="container">
-							<div class="row">
-								<div class="col-md-12 col-sm-12 col-xs-12 col-md-offset-2 col-md-pull-2 slider-text">
-									<div class="slider-text-inner">
-										<h1>Elliot Huck</h1>
-										<h2>Full-Stack Web&nbsp;Developer</h2>
-										<br>
-										<div class="text-center">
-												<span class="icon text-center">
-													<i id="scroll-down" class="icon-circle-down" style="color: white; font-size: 3em;"></i>
-												</span>
-											</div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-
-							</div>
-
-						</div>
-
-					</li>
-				</ul>
-			</div>
-
-
-		</aside>
-
-		<article id="about-me" class="grey-background">
-			<!-- class="colorlib-light-grey" -->
-			<div id="colorlib-counter">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 text-center animate-box2 intro-heading">
-							<h2 id="about-header">About Me</h2>
-						</div>
-					</div>
-					<div class="row">
-
-						<div class="col-md-4 col-sm-5">
-							<div class="text-center">
-
-								<figure id="image--professional">
-									<img src="images/pic-professional.jpg" class="card" alt="A picture of me" width="100%">
-								</figure>
-							</div>
-						</div>
-						<div class="col-md-8 col-sm-7">
-							<div class="row animate-box2">
-
-								<div class="item">
-									<div class="testimony-slide text-center">
-										<div class="text-left">
-											<p style="padding: 0 .5em 0 .5em;">
-												I'm a full-stack web developer with a love for learning. If I had to describe myself in three words,
-												I'd pick curiosity, creativity, and clarity. Those words are more than just a cute little alliteration;
-												they
-												are the professional values that I bring to every project I work on: I love to tinker with things and
-												figure
-												out how they work, I'm always exploring innovative ways to improve systems and processes, and I have a
-												passion
-												for communicating information in a way that is clear, honest, and engaging.
-											</p>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</div>
+					<div class="center aligned column">
+						<a class="ui huge button">Check Them Out</a>
 					</div>
 				</div>
 			</div>
-		</article>
+		</div>
 
-		<article id="technologies">
-			<div id="colorlib-services">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 text-center animate-box2 intro-heading">
-							<h2>Technologies</h2>
-						</div>
+
+		<div class="ui vertical stripe quote segment">
+			<div class="ui equal width stackable internally celled grid">
+				<div class="center aligned row">
+					<div class="column">
+						<h3>"What a Company"</h3>
+						<p>That is what they all say about us</p>
 					</div>
-
-					<div class="row">
-
-						<div class="col-md-4 animate-box2">
-							<div class="desc text-center">
-								<img src="images/html2.jpg" height="100px">
-								<h3>HTML</h3>
-							</div>
-						</div>
-
-						<div class="col-md-4 animate-box2">
-							<div class="desc text-center">
-								<img src="images/css2.jpg" height="100px">
-								<h3>CSS</h3>
-							</div>
-						</div>
-
-						<div class="col-md-4 animate-box2">
-							<div class="desc text-center">
-								<img src="images/javascript.jpg" height="100px">
-								<h3>JavaScript</h3>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="row">
-
-						<div class="col-md-4 animate-box2">
-							<div class="desc text-center">
-								<img src="images/git.jpg" height="100px">
-								<h3>Git</h3>
-							</div>
-						</div>
-
-						<div class="col-md-4 animate-box2">
-							<div class="desc text-center">
-								<img src="images/github2.jpg" height="100px">
-								<h3>GitHub</h3>
-							</div>
-						</div>
-
-						<div class="col-md-4 animate-box2">
-							<div class="desc text-center">
-								<img src="images/vsc.jpg" height="100px">
-								<h3>Visual Studio Code</h3>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="row">
-
-						<div class="col-md-4 animate-box2">
-							<div class="desc text-center">
-								<img src="images/jquery.jpg" height="100px">
-								<h3>jQuery</h3>
-							</div>
-						</div>
-
-						<div class="col-md-4 animate-box2">
-							<div class="desc text-center">
-								<img src="images/grunt.jpg" height="100px">
-								<h3>Grunt</h3>
-							</div>
-						</div>
-
-						<div class="col-md-4 animate-box2">
-							<div class="desc text-center">
-								<img src="images/react.jpg" height="100px">
-								<h3>React</h3>
-							</div>
-						</div>
-					</div>
-
-
-
-					<div class="row">
-
-						<div class="col-md-4 animate-box2">
-							<div class="desc text-center">
-								<img src="images/vs.jpg" height="100px">
-								<h3>Visual Studio</h3>
-							</div>
-						</div>
-
-						<div class="col-md-4 animate-box2">
-							<div class="desc text-center">
-								<img src="images/windows.jpg" height="100px">
-								<h3>C# &amp; .NET</h3>
-							</div>
-						</div>
-
-						<div class="col-md-4 animate-box2">
-							<div>
-								<div class="desc text-center">
-									<img src="images/sql.jpg" height="100px">
-									<h3>SQL &amp; SQLite</h3>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-		</article>
-
-		<article id="projects">
-			<div id="colorlib-work" class="grey-background">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 text-center animate-box2 intro-heading">
-							<h2>Projects</h2>
-						</div>
-					</div>
-					<div class="row">
-
-						<div class="col-md-6 animate-box2 text-center">
-							<a href="https://github.com/elliot-huck/vocabulous" target="_blank"
-							class="work-img card project-card"
-							id="vocabulous-card">
-								<div class="overlay"></div>
-								<div class="desc">
-									<p class="tag"><span>Front-end Capstone</span></p>
-									<h3>Vocabulous</h3>
-									<p class="tag"><span style="color: #000;">A vocabulary-building app that serves as my front-end final project</span></p>
-									<span class="read-more">See it on GitHub <i class="icon-arrow-right3"></i></span>
-								</div>
-							</a>
-						</div>
-
-						<div class="col-md-6 animate-box2 text-center">
-							<a href="https://github.com/Preposterous-Pandas/reactive-nutshell" target="_blank"
-							class="work-img card project-card"
-							id="nutshell-card">
-								<div class="overlay"></div>
-								<div class="desc">
-									<p class="tag"><span>Group Project</span></p>
-									<h3>Nutshell</h3>
-									<p class="tag"><span style="color: #000;">A fake social media site tying together numerous front-end concepts</span></p>
-									<p class="tag"><span style="color: #000;">I wrote the code in the /src/Components/Tasks directory</span></p>
-									<span class="read-more">See it on GitHub <i class="icon-arrow-right3"></i></span>
-								</div>
-							</a>
-						</div>
-
+					<div class="column">
+						<h3>"I shouldn't have gone with their competitor."</h3>
+						<p>
+							<img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
+						</p>
 					</div>
 				</div>
 			</div>
-		</article>
+		</div>
 
-		<article id="fun-facts">
-			<div id="colorlib-testimony" class="colorlib-counters">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12 text-center animate-box2 intro-heading">
-							<h2>Fun Facts</h2>
+		<div class="ui vertical stripe segment">
+			<div class="ui text container">
+				<h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
+				<p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing
+					by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth
+					your attention.</p>
+				<a class="ui large button">Read More</a>
+				<h4 class="ui horizontal header divider">
+					<a href="#">Case Studies</a>
+				</h4>
+				<h3 class="ui header">Did We Tell You About Our Bananas?</h3>
+				<p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true.
+					It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
+				<a class="ui large button">I'm Still Quite Interested</a>
+			</div>
+		</div>
 
-							<div style="margin-bottom: 1em;">
-								<h3 class="text-left">
-									<!-- <i class="icon-quotes-left"></i> -->
-									&OpenCurlyDoubleQuote;I am an omnivorous reader with a strangely retentive memory for
-									trifles.&CloseCurlyDoubleQuote;
-									<!-- <i class="icon-quotes-right"></i> -->
-								</h3>
-								<div class="text-right">
-									<span>&mdash;Sherlock Holmes in "The Lion's Mane"</span>
-								</div>
-							</div>
 
-							<br><br>
-
-							<div class="row">
-								<div class="text-left col-md-8 col-sm-8">
-									<h3>Some pseudo-random facts about me:</h3>
-									<ol id="fun-facts--list">
-										<li>I was born and raised in Bloomington, Indiana. Go Hoosiers!</li>
-										<li>Yo puedo hablar el espa&ntildeol con fluidez (I can speak Spanish fluently).</li>
-										<li>A great way to get my attention is offering to teach me a new board game.</li>
-										<li>I love to read! Especially when it comes to mysteries, science fiction, fantasy, and anything written by
-											P.G.
-											Wodehouse.
-										</li>
-										<li>Setting me loose in a kitchen full of ingredients is like unleashing a mad scientist on an unsuspecting
-											laboratory:
-											something crazy WILL be concocted!</li>
-									</ol>
-								</div>
-
-								<div class="col-md-4 col-sm-4">
-									<figure id="image--relaxed">
-										<img src="images/pic-relaxed.jpg" class="card" alt="A more relaxed picture of me" width="100%">
-									</figure>
-								</div>
-
-							</div>
+		<div class="ui inverted vertical footer segment">
+			<div class="ui container">
+				<div class="ui stackable inverted divided equal height stackable grid">
+					<div class="three wide column">
+						<h4 class="ui inverted header">About</h4>
+						<div class="ui inverted link list">
+							<a href="#" class="item">Sitemap</a>
+							<a href="#" class="item">Contact Us</a>
+							<a href="#" class="item">Religious Ceremonies</a>
+							<a href="#" class="item">Gazebo Plans</a>
 						</div>
 					</div>
-
-				</div>
-			</div>
-		</article>
-
-		<article id="contact">
-			<div id="colorlib-hire" class="grey-background">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box2">
-							<h2 class="heading" style="font-weight: 400;">Want to get in touch?</h2>
-							<div class="text-left">
-								<p>
-									<i class="icon-linkedin" style="font-size: 2em; float: left; margin-right: .5em;"></i>
-									<a href="https://www.linkedin.com/in/elliot-huck/" target="_blank">Reach out</a> on LinkedIn
-								</p>
-
-								<p>
-									<i class="icon-github" style="font-size: 2em; float: left; margin-right: .5em;"></i>
-									<a href="https://github.com/elliot-huck" target="_blank">Check out</a>
-									my GitHub page
-								</p>
-
-								<p>
-									<i class="icon-file-pdf" style="font-size: 2em; float: left; margin-right: .5em;"></i>
-									<a href="./Elliot-Huck-Resume.pdf" target="_blank">Download</a> my r&eacutesum&eacute
-								</p>
-							</div>
+					<div class="three wide column">
+						<h4 class="ui inverted header">Services</h4>
+						<div class="ui inverted link list">
+							<a href="#" class="item">Banana Pre-Order</a>
+							<a href="#" class="item">DNA FAQ</a>
+							<a href="#" class="item">How To Access</a>
+							<a href="#" class="item">Favorite X-Men</a>
 						</div>
+					</div>
+					<div class="seven wide column">
+						<h4 class="ui inverted header">Footer Header</h4>
+						<p>Extra space for a call to action inside the footer that could help re-engage users.</p>
 					</div>
 				</div>
 			</div>
-		</article>
+		</div>
+	</div>
 
-		<footer>
-			<div id="footer" class="text-right">
-				<!-- <div class="container"> -->
-				<!-- <div class="row"> -->
 
-				<!-- <div class="col-md-12 col-pb-sm right-display"> -->
-				<p style="padding: .5em;">
-					<!-- <span class="block"> -->
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					Copyright &copy;
-					<script>document.write(new Date().getFullYear());</script> Elliot Huck - All rights reserved
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					<!-- </span> -->
 
-				</p>
-				<!-- </div> -->
-				<!-- </div> -->
-				<!-- </div> -->
-			</div>
-		</footer>
 
-	</main>
 
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Counters -->
-	<script src="js/jquery.countTo.js"></script>
-	<!-- Owl Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-
-	<!-- Main JS (Do not remove) -->
-	<script src="js/main.js"></script>
-
+	<div id="cf_notif_div_izj1nl07zu" class="cf_div_position_south dark_body cf_div_theme_dark">
+		<div id="all_notification_actions" style="display: none;">
+			<a href="#" class="all_notification_action_button" title="Clear all notifications" id="clear_all"><img
+					src="chrome-extension://iipjdmnoigaobkamfhnojmglcdbnfaaf/img/baseline-clear_all-24px.svg"></a>
+			<a href="#" class="all_notification_action_button" title="Notification settings" id="open_settings"><img
+					src="chrome-extension://iipjdmnoigaobkamfhnojmglcdbnfaaf/img/baseline-settings-20px.svg"></a>
+		</div>
+	</div>
 </body>
 
 </html>
