@@ -166,6 +166,9 @@
 <body class="pushable">
 	<a name="top"></a>
 
+	<!-- ToDo: Possibly get rid of button questions -->
+	<!-- ToDo: Possibly add down arrow to indicate scroll -->
+
 	<!-- Following Menu -->
 	<div class="ui container">
 		<div class="ui large borderless top fixed hidden menu inverted">
@@ -174,16 +177,17 @@
 					<h1>[ elliot huck ]</h1>
 				</a>
 			</div>
+			<!-- ToDo: center link icons inside of button/link -->
 			<div class="right menu">
-					<a class="fitted item" href="https://www.linkedin.com/in/elliot-huck/" target="_blank">
-						<i class="big inverted blue linkedin link icon"></i>
-					</a>
-					<a class="fitted item" href="https://github.com/elliot-huck" target="_blank">
-						<i class="big inverted blue github link icon"></i>
-					</a>
-					<a class="fitted item" href="./Elliot-Huck-Resume.pdf" target="_blank">
-						<i class="big inverted blue file pdf link icon"></i>
-					</a>
+				<a class="fitted item" href="https://www.linkedin.com/in/elliot-huck/" target="_blank">
+					<i class="big inverted blue linkedin link icon"></i>
+				</a>
+				<a class="fitted item" href="https://github.com/elliot-huck" target="_blank">
+					<i class="big inverted blue github link icon"></i>
+				</a>
+				<a class="fitted item" href="./Elliot-Huck-Resume.pdf" target="_blank">
+					<i class="big inverted blue file pdf link icon"></i>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -191,7 +195,7 @@
 	<!-- Page Contents -->
 	<div class="pusher">
 		<div class="ui inverted vertical masthead center aligned segment">
-<!-- 
+			<!--
 			<div class="ui container">
 				<div class="ui large secondary inverted pointing menu">
 					<div class="right menu">
@@ -207,7 +211,6 @@
 					</div>
 				</div>
 			</div> -->
-
 			<div class="ui text container">
 				<h1 class="ui inverted header">Elliot Huck</h1>
 				<h2>Web Developer</h2>
@@ -223,9 +226,9 @@
 				<!-- <div class="ui huge inverted primary button">Get Started <i class="right chevron icon"></i></div> -->
 
 			</div>
-
 		</div>
 
+		<!-- ToDo: Make hover picture reveal silly pic -->
 		<div class="ui vertical stripe segment inverted" id="about">
 			<div class="ui middle aligned stackable grid container">
 				<div class="row">
@@ -253,25 +256,58 @@
 			</div>
 		</div>
 
-		<!-- ToDo: Turn two projects into adjacent stackable cards that link to GH -->
+		<!-- ToDo: Make cards link to GH and reword to remove "allows" -->
 		<div class="ui vertical stripe segment inverted" id="projects">
 			<div class="ui text container">
 				<h3 class="ui header inverted">Projects</h3>
-				<h2>Vocabulous</h2>
-				<p>A vocabulary-building app that allows you to discover new words, add them to a personal list, and take
-					quizzes on those words to help you learn them</p>
-				<!-- <a href="https://github.com/elliot-huck/vocabulous" target="_blank"></a> -->
-				<h2>RecipEase</h2>
-				<p>A virtual cookbook that allows you to save your favorite recipes and use them to create a grocery shopping
-					list</p>
-				<!-- <a href="https://github.com/elliot-huck/recipease" target="_blank"></a> -->
+				<div class="two column stackable ui relaxed inverted grid">
+					<div class="stretched row">
 
-				<div class="ui center aligned text container">
-					<h2>Want to check out more of my work?</h2>
-					<a class="ui huge center aligned inverted primary button" href="https://github.com/elliot-huck" target="_blank">Visit my GitHub page <i class="right chevron icon"></i></a>
+						<div class="column">
+							<!-- <a href="https://github.com/elliot-huck/vocabulous" target="_blank"> -->
+							<div class="ui inverted celled grid">
+								<div class="ui inverted segment">
+									<div class="ui inverted large header">Vocabulous</div>
+									<p>
+										A vocabulary-building app that allows you to discover new words, add them to a
+										personal list, and take quizzes on those words to help you learn them
+									</p>
+								</div>
+							</div>
+							<!-- </a> -->
+						</div>
+
+						<div class="column">
+							<!-- <a href="https://github.com/elliot-huck/recipease" target="_blank"> -->
+							<div class="ui inverted celled grid">
+								<div class="ui inverted segment">
+									<div class="ui inverted large header">RecipEase</div>
+									<p>
+										A virtual cookbook that allows you to save your favorite recipes and use them to
+										create a grocery shopping list
+									</p>
+								</div>
+							</div>
+							<!-- </a> -->
+						</div>
+					</div>
 				</div>
 			</div>
+
+			<br />
+
+			<div class="ui center aligned text container">
+				<h2>Want to check out my work?</h2>
+				<a class="ui huge center aligned inverted primary button" href="https://github.com/elliot-huck" target="_blank">
+					Visit my GitHub page <i class="right chevron icon"></i>
+				</a>
+			</div>
+
 		</div>
+		<!-- <a href="https://github.com/elliot-huck/vocabulous" target="_blank"></a> -->
+		<!-- <a href="https://github.com/elliot-huck/recipease" target="_blank"></a> -->
+
+
 
 		<div class="ui vertical stripe segment inverted" id="technologies">
 			<div class="ui text container">
@@ -313,6 +349,7 @@
 				</div>
 			</div>
 		</div>
+
 
 	</div>
 
