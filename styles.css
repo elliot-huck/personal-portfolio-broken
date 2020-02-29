@@ -103,24 +103,22 @@
 
 h1, h3, div.header{
 	/* color: red !important; */
-	font-family: 'Overpass Mono' !important;
+	font-family: 'Overpass Mono', monospace !important;
 	font-weight: 300 !important;
+	/* transform: scale(1, 1.2) !important; */
 	/* text-transform: lowercase !important; */
 }
 
 a.ui {
-	font-family: 'Overpass Mono' !important;
+	font-family: 'Overpass Mono', monospace !important;
 	font-size: 1.07em !important;
 	transform: scale(1, 1.2) !important;
 }
 
-
-/* h2, h3, h4, h5, h6 */
-
-a > h1 {
-	font-family: 'Ubuntu' !important;
+a > h1, p, h2 {
+	font-family: 'Ubuntu', sans-serif !important;
 }
 
 p, h2 {
-	font-family: 'Ubuntu' !important;
+	color: #bababa;
 }
